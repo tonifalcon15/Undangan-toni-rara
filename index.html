@@ -20,7 +20,32 @@ main,footer{position:relative;z-index:2}.section{max-width:850px;margin:auto;pad
 .section-title{font-size:clamp(27px,6vw,38px);font-weight:400;color:var(--gold);margin:8px 0 28px}.events{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:16px}.event{border:1px solid var(--line);background:linear-gradient(145deg,#211f24,#15151a);padding:28px 20px;position:relative;overflow:hidden}.event:before{content:"✧";position:absolute;top:8px;right:13px;color:#d8c18a55;font-size:28px}.event h3{font-size:22px;font-weight:400;color:var(--gold);margin:0 0 14px}.event strong{font:12px Arial,sans-serif;letter-spacing:.08em;color:#f0e9dc}.event p{font:13px/1.9 Arial,sans-serif;color:#bdb6ac;margin:12px 0}.map{margin-top:8px;padding:10px 16px;font-size:9px}.countdown{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:34px auto 0}.unit{min-width:68px;padding:12px 10px;border:1px solid #51483b;background:#19191f}.unit b{display:block;font:27px Georgia;color:var(--gold)}.unit small{font:9px Arial,sans-serif;letter-spacing:.14em;color:#aaa6a0}.family{font:13px/1.9 Arial,sans-serif;color:#bdb6ac}.rsvp{margin-top:14px}.footer{padding:42px 20px 55px;text-align:center;background:#0b0b0f;border-top:1px solid #51483b;color:#aaa6a0;font:12px/1.9 Arial,sans-serif}.footer strong{color:var(--gold);font:italic 22px Georgia}
 @media(max-width:620px){.events{grid-template-columns:1fr}.section{padding:58px 19px}.names{gap:12px}.with{width:100%}.frame{inset:12px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
-.guest-form{max-width:620px;margin:28px auto 0;text-align:left;border:1px solid var(--line);background:linear-gradient(145deg,#211f24,#15151a);padding:24px}.guest-form label{display:block;font:11px Arial,sans-serif;letter-spacing:.08em;color:var(--gold);margin:0 0 8px}.guest-form input,.guest-form select,.guest-form textarea{width:100%;padding:13px 12px;margin:0 0 18px;background:#101014;border:1px solid #51483b;color:#eee5d6;font:14px Arial,sans-serif;border-radius:2px}.guest-form textarea{min-height:110px;resize:vertical}.guest-form button{width:100%;border:1px solid var(--gold);background:var(--gold);color:#17151a;padding:13px;font:11px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}.guest-form button:disabled{opacity:.6}.form-status{font:13px/1.7 Arial,sans-serif;color:var(--gold);margin:16px auto 0;min-height:24px;text-align:center}.music-toggle{position:fixed;right:18px;bottom:18px;z-index:10;border:1px solid var(--gold);border-radius:50%;width:48px;height:48px;background:#19191f;color:var(--gold);font:20px Arial;box-shadow:0 4px 18px #0008;cursor:pointer}.music-toggle.playing{background:#d8c18a;color:#17151a}\n</style>
+.guest-form{max-width:620px;margin:28px auto 0;text-align:left;border:1px solid var(--line);background:linear-gradient(145deg,#211f24,#15151a);padding:24px}.guest-form label{display:block;font:11px Arial,sans-serif;letter-spacing:.08em;color:var(--gold);margin:0 0 8px}.guest-form input,.guest-form select,.guest-form textarea{width:100%;padding:13px 12px;margin:0 0 18px;background:#101014;border:1px solid #51483b;color:#eee5d6;font:14px Arial,sans-serif;border-radius:2px}.guest-form textarea{min-height:110px;resize:vertical}.guest-form button{width:100%;border:1px solid var(--gold);background:var(--gold);color:#17151a;padding:13px;font:11px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}.guest-form button:disabled{opacity:.6}.form-status{font:13px/1.7 Arial,sans-serif;color:var(--gold);margin:16px auto 0;min-height:24px;text-align:center}.music-toggle{position:fixed;right:18px;bottom:18px;z-index:10;border:1px solid var(--gold);border-radius:50%;width:48px;height:48px;background:#19191f;color:var(--gold);font:20px Arial;box-shadow:0 4px 18px #0008;cursor:pointer}.music-toggle.playing{background:#d8c18a;color:#17151a}\n
+.auto-scroll-toggle{
+  position:fixed;
+  left:18px;
+  bottom:18px;
+  z-index:11;
+  border:1px solid var(--gold);
+  border-radius:24px;
+  padding:12px 16px;
+  background:#19191f;
+  color:var(--gold);
+  font:11px Arial,sans-serif;
+  letter-spacing:.08em;
+  box-shadow:0 4px 18px #0008;
+  cursor:pointer;
+}
+.auto-scroll-toggle.active{
+  background:var(--gold);
+  color:#17151a;
+}
+@media(max-width:420px){
+  .auto-scroll-toggle{left:12px;bottom:14px;padding:11px 13px;font-size:10px}
+  .music-toggle{right:12px;bottom:14px}
+}
+
+</style>
 </head>
 <body>
 <div class="petal">✧</div><div class="petal">❀</div><div class="petal">✦</div><div class="petal">❧</div><div class="petal">✧</div>
